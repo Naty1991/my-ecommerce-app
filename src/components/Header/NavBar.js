@@ -1,5 +1,8 @@
 import React from 'react'
 import './NavBar.css'
+import CartWidget from './CartWidget.js'
+
+
 
 
 const data = [
@@ -28,6 +31,8 @@ const NavBar = () => {
                 ))
                 }
             </ul>
+
+            <CartWidget />    
 
         </nav>
         </div>

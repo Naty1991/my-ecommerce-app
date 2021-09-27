@@ -1,0 +1,10 @@
+.trolley-icon{
+    position:relative;
+    bottom: 2px;
+    font-size: 25px;
+    
+}
+
+.trolley-icon:hover{
+    color: #B3ACAC;
+}
