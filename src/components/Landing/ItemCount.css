@@ -1,0 +1,61 @@
+.count-div{
+    width:  150px;
+    height: 180px;
+    background-color: #C4C0C0;
+    position: relative;
+    left: 48%;
+    
+}
+
+.count-div h3{
+    font-size: 12px;
+    font-family: 'Titillium', sans-serif; ;
+}
+
+.container-button{
+    
+    background-color: #f0f0f0;
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    top: 110px;
+    border-radius: 3px;
+}
+
+
+
+.button-primary{
+    width: 50px;
+    height: 20px;
+    color: #A23C3C;
+    border: none;
+}
+
+.contador{
+    position: relative;
+    top: 20px;
+}
+
+.button-off{
+    width: 50px;
+    height: 20px;
+    border: none;
+    color: #A23C3C;
+}
+
+.button-add{
+    width: 150px;
+    color:#A23C3C;
+    margin-top: 5px;
+    border-radius: 1px solid #A23C3C;
+    position: relative;
+    top:107px;
+    
+}
+
+.button-add:hover{
+    background-color: #ECD6C1;
+}
