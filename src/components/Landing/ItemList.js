@@ -12,7 +12,7 @@ const ItemList = () => {
     fetch('https://my-json-server.typicode.com/Naty1991/FAKEDATA/products')
   .then(response => response.json())
   .then(data => setData(data))
-  })
+  }, [])
     return (
         <div className="container-items">
             {data.map((info) =>(
