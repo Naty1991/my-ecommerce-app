@@ -2,9 +2,10 @@
     position:relative;
     bottom: 2px;
     font-size: 25px;
+    color: #84E7AF;
     
 }
 
 .trolley-icon:hover{
-    color: #B3ACAC;
+    color: #fafafa;
 }

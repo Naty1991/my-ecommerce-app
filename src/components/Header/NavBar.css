@@ -1,16 +1,32 @@
 .div-container{
-    background-color: #000;
+    background-color: #f0f0f0;
 }
 
-.nav-container h1 {
-    color: #f0f0f0;
+.p-play{
+    color: #DC4254;
 }
 
+.r-play{
+    color: #42D7DC;
+}
 
+.dot-play{
+    color: #42DC7A;
+}
+
+.dice-icon{
+    position: relative;
+    right: 40px;
+    color: #7DCACD;
+}
 .nav-container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.nav-container h1 span {
+    font-size: 35px;
 }
 .nav-container ul{
     display: flex;
@@ -26,12 +42,12 @@
 
 .link-nav{
     text-decoration: none;
-    color: #B3ACAC;
-    font-family: 'Titillium', sans-serif;
+    color: #DEA353;
+    font-family: 'Oswald', sans-serif;
     
 }
 
 .link-nav:hover{
-    color: #f0f0f0;
+    color: #D14931;
    
 }

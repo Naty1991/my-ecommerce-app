@@ -1,0 +1,43 @@
+
+.container {
+    border: 5px solid #DEA353;
+    width: 200px;
+    height: 365px;
+    background-color: #BAB9B8;
+    border-radius: 7px;
+    box-shadow: 5px #BAB9B8;
+}
+
+.title-item{
+    font-size: 13px;
+    position: relative;
+    top: 12px;
+    text-align: center;
+    background-color: #BAB9B8;
+}
+
+.price-item{
+    font-size: 15px;
+    position: relative;
+    bottom: 70px;
+    margin-left: 20px;
+}
+
+
+.btn-item{
+    position: relative;
+    bottom: 50px;
+}
+.t-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-item{
+    position: relative;
+    bottom: 70px;
+    
+    
+}
+

@@ -1,16 +1,19 @@
 import React from 'react'
 import './NavBar.css'
 import CartWidget from './CartWidget.js'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faDiceD6} from '@fortawesome/free-solid-svg-icons'
+
 
 
 
 
 const data = [
-    {name: "Nuestros platos", id: 1},
-    {name: "Nuestros postres", id: 2},
-    {name: "Bebidas", id: 3},
+    {name: "Edades", id: 1},
+    {name: "Juguetes", id: 2},
+    {name: "Juegos de mesa", id: 3},
     {name: "Recomendados", id: 4},
-    {name: "Nosotros", id: 5},
+    {name: "Sucursales", id: 5},
     {name: "Contacto", id: 6}
 ] 
 
@@ -21,7 +24,10 @@ const NavBar = () => {
         <div className="div-container">
             <nav className="nav-container">
             
-            <h1>Lo de Acevedo.</h1>
+            <h1><span className="p-play">Play</span><span className="r-play">room</span> <span className="dot-play">.</span></h1>
+            
+            <h1 className="dice-icon"><FontAwesomeIcon icon={faDiceD6}/></h1>
+            
             <ul>
                
                 { data.map( (data) => (
