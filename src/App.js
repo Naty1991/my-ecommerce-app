@@ -1,5 +1,6 @@
 import NavBar from "./components/Header/NavBar";
 import ItemListContainer from "./components/Landing/ItemListContainer";
+import ItemDetailContainer from "./components/Landing/ItemDetailContainer";
 
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
     <div className="App">
       <NavBar />
       <ItemListContainer greeting="Bienvenidos a mi toy store app.'"/>
+
+      <ItemDetailContainer/>
       
     </div>
   );

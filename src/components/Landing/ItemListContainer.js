@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './ItemListContainer.css'
 
 import ItemList from './ItemList'
+import ItemCount from './ItemCount'
 
 const ItemListContainer = (props) => {
     return (
@@ -11,6 +12,8 @@ const ItemListContainer = (props) => {
         </div>
         <div>
             <ItemList/>
+
+            
            
         </div>
         
