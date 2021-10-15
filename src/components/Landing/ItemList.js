@@ -18,7 +18,7 @@ const ItemList = () => {
             {data.map((info) =>{
                return(
                  <div className="links-container"key={info.id}>
-                   <Link className="link-info"to={`/detail/${info.id}`}><Item data={info} /></Link>
+                   <Link className="link-info"to={`/item/${info.id}`}><Item data={info} /></Link>
                    
                  </div>
                )
