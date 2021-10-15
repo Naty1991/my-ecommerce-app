@@ -4,4 +4,9 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    
+}
+
+.link-info{
+    text-decoration: none;
 }

@@ -1,4 +1,38 @@
-.div-detail{
+.div-container-detail{
     display: flex;
+    margin-left: 350px;
+    background-color: #f0f0f0;
+    border: 3px solid #A1A09E;
+    border-radius: 8px;
+    width: 50%;
+    height: 400px;
+}
 
+
+.contenido-detalles{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.imagen-detalles{
+    margin-top: 40px;
+}
+
+.btn-compra{
+    width: 200px;
+    background-color: #45AA62;
+    padding: 7px;
+    margin-left: 70px;
+    border-radius: 5px;
+}
+
+.btn-compra:hover{
+    color: #f0f0f0;
+    background-color: #478358;
+    
 }

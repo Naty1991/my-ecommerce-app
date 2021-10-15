@@ -2,6 +2,9 @@
     background-color: #f0f0f0;
 }
 
+.link-play{
+    text-decoration: none;
+}
 .p-play{
     color: #DC4254;
 }
@@ -34,7 +37,7 @@
 
 }
 
-.nav-container ul li{
+.link-nav{
     list-style: none;
     padding: 10px;
     margin-left: 45px;

@@ -1,18 +1,31 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/Header/NavBar";
-import ItemListContainer from "./components/Landing/ItemListContainer";
-import ItemDetailContainer from "./components/Landing/ItemDetailContainer";
+import Home from "./views/Home";
+import ItemDetailContainer from "./views/ItemDetailContainer";
+
+
 
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <NavBar />
-      <ItemListContainer greeting="Bienvenidos a mi toy store app.'"/>
+      <Switch>
+      <Route path='/' exact component={Home}/>
+      <Route path='/item/:id' component={ItemDetailContainer}/>
 
-      <ItemDetailContainer/>
+      </Switch>
+      
+      
+
+     
       
     </div>
+    </Router>
   );
+    
+    
 }
 
 export default App;

@@ -3,19 +3,14 @@ import './NavBar.css'
 import CartWidget from './CartWidget.js'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDiceD6} from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom'
 
 
 
 
 
-const data = [
-    {name: "Edades", id: 1},
-    {name: "Juguetes", id: 2},
-    {name: "Juegos de mesa", id: 3},
-    {name: "Recomendados", id: 4},
-    {name: "Sucursales", id: 5},
-    {name: "Contacto", id: 6}
-] 
+
+
 
 const NavBar = () => {
 
@@ -24,18 +19,16 @@ const NavBar = () => {
         <div className="div-container">
             <nav className="nav-container">
             
-            <h1><span className="p-play">Play</span><span className="r-play">room</span> <span className="dot-play">.</span></h1>
+            <Link to='/' className="link-play"><h1><span className="p-play">Play</span><span className="r-play">room</span> <span className="dot-play">.</span></h1></Link>
             
-            <h1 className="dice-icon"><FontAwesomeIcon icon={faDiceD6}/></h1>
+            <Link to='/'><h1 className="dice-icon"><FontAwesomeIcon icon={faDiceD6}/></h1></Link>
             
             <ul>
-               
-                { data.map( (data) => (
-                    <li key={data.id}>
-                    <a href= "/" className="link-nav"><span>{data.name}</span></a>
-                </li>
-                ))
-                }
+               <Link className='link-nav'>Edades</Link>
+               <Link className='link-nav'>Juguetes</Link>
+               <Link className='link-nav'>Juegos de Mesa</Link>
+               <Link className='link-nav'>Sucursales</Link>
+               <Link className='link-nav'>Contacto</Link>
             </ul>
 
             <CartWidget />    
