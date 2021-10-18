@@ -2,6 +2,11 @@
 **
 
 ### 
+
+![logoplayroom](https://user-images.githubusercontent.com/60083792/137804969-9d667c25-210a-49ab-8ce1-7b5e7c9cf83b.png)
+
+
+
 *"Playroom" es una e-commerce app de una juguetería creada con el objetivo de realizar mi primer proyecto grande usando REACT JS para CODER HOUSE.~~ *
 
 
@@ -17,8 +22,8 @@
 
 ## **To do List.**
 
--  Colocar un carousel en la home.
--  Hacer de 'cart' en navbar más funcionable.
+- Colocar un carousel en la home.
+- Hacer de 'cart' en navbar más funcionable.
 - Crear y administrar la base de datos mis productos mediante firebase.
 - Crear un serch para buscar juguetes.
 - Crear un inicio y cierre de sesión para cada visitante de mi app.
