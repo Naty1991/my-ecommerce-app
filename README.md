@@ -1,5 +1,4 @@
-##  :tw-1f631: :tw-1f631: :tw-1f631: Bienvenidos a mi e-commerce app "Playroom"  :fa-codepen: . :tw-1f600:
-**
+# Bienvenidos a mi e-commerce app "Playroom" :)
 
 ### 
 
