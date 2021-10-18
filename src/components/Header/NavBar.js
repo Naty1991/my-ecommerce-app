@@ -25,8 +25,7 @@ const NavBar = () => {
             
             <ul>
                <Link className='link-nav'>Edades</Link>
-               <Link className='link-nav'>Juguetes</Link>
-               <Link className='link-nav'>Juegos de Mesa</Link>
+               <Link className='link-nav' to='/category/category:id'>Juguetes</Link>
                <Link className='link-nav'>Sucursales</Link>
                <Link className='link-nav'>Contacto</Link>
             </ul>
