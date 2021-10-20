@@ -32,8 +32,12 @@
     border-radius: 5px;
 }
 
-.btn-compra:hover{
-    color: #f0f0f0;
-    background-color: #478358;
-    
+
+
+
+.item-conterr{
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
 }

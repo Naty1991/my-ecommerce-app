@@ -38,16 +38,23 @@
     color: #A23C3C;
 }
 
+
+
 .button-add{
     width: 200px;
-    color:#A23C3C;
+    color:#000;
     margin-top: 5px;
-    border-radius: 1px solid #A23C3C;
+    border-radius: 4px;
     position: relative;
     top:107px;
+    background-color: #45AA62;
+    padding: 5px;
     
 }
 
 .button-add:hover{
-    background-color: #ECD6C1;
+    color: #f0f0f0;
+    background-color: #478358;
+        
+    
 }

@@ -3,6 +3,7 @@ import NavBar from "./components/Header/NavBar";
 import Home from "./views/Home";
 import ItemDetailContainer from "./views/ItemDetailContainer";
 import Category from "./views/Category"
+import IndividualCategory from "./views/IndividualCategory";
 
 
 
@@ -15,7 +16,8 @@ function App() {
       <Switch>
       <Route path='/' exact component={Home}/>
       <Route path='/item/:id' component={ItemDetailContainer}/>
-      <Route path='/category/category:id' component={Category}/>
+      <Route path='/category/juguetes' component={Category}/>
+      <Route patch='/category/juguetes/:id' component={IndividualCategory} />
 
       </Switch>
       

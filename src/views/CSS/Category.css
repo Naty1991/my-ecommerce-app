@@ -1,0 +1,11 @@
+.container-categoria{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.link-categoria{
+    text-decoration: none;
+}

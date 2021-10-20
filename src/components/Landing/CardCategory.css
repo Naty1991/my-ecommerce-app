@@ -1,0 +1,23 @@
+.div-juguetes{
+    width: 250px;
+    background-color:#BAB9B8 ;
+    border: 5px solid #DEA353;
+    border-radius: 10px;
+    
+    
+}
+
+.div-juguetes:hover{
+    background-color: #DFDEDB;
+}
+
+.img-cat{
+    position: relative;
+    left: 25px;
+    bottom: 20px;
+}
+
+.h-cat{
+    text-align: center;
+    color: #7C5520;
+}
