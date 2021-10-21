@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import Item from '../components/Landing/Item'
+
 
 
 const IndividualCategory = ({ match }) => {
 
     const[data, setData] = useState({})
+    console.log(data)
 
     let categID = match.params.category
     useEffect(()=>{
@@ -16,7 +17,7 @@ const IndividualCategory = ({ match }) => {
 
     return (
         <div>
-            <Item data={data}/>
+          
         </div>
     )
 }

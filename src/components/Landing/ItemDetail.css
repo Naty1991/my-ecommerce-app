@@ -41,3 +41,21 @@
     display: flex;
     justify-content: center;
 }
+
+
+
+.btn-final{
+    position: relative;
+    top: 60px;
+    right: 45px;
+    width: 200px;
+    background-color: #09B0B3;
+    padding: 7px;
+    margin-left: 70px;
+    border-radius: 5px;
+    
+}
+
+.btn-finalizar:hover{
+    color: #f0f0f0;
+}

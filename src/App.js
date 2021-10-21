@@ -4,6 +4,7 @@ import Home from "./views/Home";
 import ItemDetailContainer from "./views/ItemDetailContainer";
 import Category from "./views/Category"
 import IndividualCategory from "./views/IndividualCategory";
+import Cart from "./views/Cart";
 
 
 
@@ -17,7 +18,8 @@ function App() {
       <Route path='/' exact component={Home}/>
       <Route path='/item/:id' component={ItemDetailContainer}/>
       <Route path='/category/juguetes' component={Category}/>
-      <Route patch='/category/juguetes/:id' component={IndividualCategory} />
+      <Route patch='/category/juguetes/:category' component={IndividualCategory} />
+      <Route patch='/cart' component={Cart}/>
 
       </Switch>
       

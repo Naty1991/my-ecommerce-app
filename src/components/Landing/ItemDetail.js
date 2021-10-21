@@ -1,15 +1,21 @@
 import React, { useState } from 'react'
 import './ItemDetail.css'
 import ItemCount from './ItemCount'
+import {Link} from 'react-router-dom'
 
 
 const ItemDetail = ({ data }) => {
 
     const[compra, setCompra] = useState('');
+    const[compraTerminada, setCompraTerminada] = useState(false)
 
     const onAdd = (compras)=> {
         setCompra(compras)
+        setCompraTerminada(!compraTerminada)
+        
     }
+
+        console.log("compras realizadas", compra)
 
     return (
         <div className="div-container-detail" key={data.id}>
@@ -19,7 +25,9 @@ const ItemDetail = ({ data }) => {
             <h2>${data.price}</h2>
             <h3>{data.detail}</h3>
             <div className="item-conterr">
-            <ItemCount initial = {parseInt(1)} stock={parseInt(20)} onClick={(cantidad) => onAdd(cantidad)} />
+            
+            {compraTerminada ? <button className="btn-final"><Link to='/cart'>Finalizar compra</Link></button> :<ItemCount initial = {parseInt(1)} stock={parseInt(20)} onClick={(cantidad) => onAdd(cantidad)} /> }
+            
             </div>
             
 

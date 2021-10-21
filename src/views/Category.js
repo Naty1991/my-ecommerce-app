@@ -18,7 +18,7 @@ const Category = () => {
           <div className="links-categoria" key={info.id}>
             <Link
               className="link-categoria"
-              to={`/category/${info.category}/${info.id}`}
+              to={`/category/${info.category}/`}
             >
               <CardCategory cat={info} />
             </Link>
