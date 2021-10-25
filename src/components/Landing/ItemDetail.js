@@ -1,10 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './ItemDetail.css'
 import ItemCount from './ItemCount'
 import {Link} from 'react-router-dom'
+import { CartContext } from './CartContext'
 
 
 const ItemDetail = ({ data }) => {
+    const [items, setItems, addItem] = useContext(CartContext)
+    const { pictureUrl, price, title, description } = data;
+    const [itemInCart, setItemInCart] = useState(false);
+
+
+    const onAddToCart = (cantidad) => {
+
+        addItem(data, cantidad);
+        setItemInCart(true);
+      }
+    
 
     const[compra, setCompra] = useState('');
     const[compraTerminada, setCompraTerminada] = useState(false)
@@ -16,6 +28,8 @@ const ItemDetail = ({ data }) => {
     }
 
         console.log("compras realizadas", compra)
+
+       
 
     return (
         <div className="div-container-detail" key={data.id}>
@@ -41,5 +55,6 @@ const ItemDetail = ({ data }) => {
 }
 
 export default ItemDetail
+
 
 
