@@ -6,28 +6,21 @@ import { CartContext } from './CartContext'
 
 
 const ItemDetail = ({ data }) => {
-    const [items, setItems, addItem] = useContext(CartContext)
-    const { pictureUrl, price, title, description } = data;
-    const [itemInCart, setItemInCart] = useState(false);
+    const [items, setItems, addItem, clearAll, removeItem, isInCart] = useContext(CartContext)
 
 
-    const onAddToCart = (cantidad) => {
-
-        addItem(data, cantidad);
-        setItemInCart(true);
-      }
     
 
-    const[compra, setCompra] = useState('');
+    
     const[compraTerminada, setCompraTerminada] = useState(false)
 
     const onAdd = (compras)=> {
-        setCompra(compras)
+        setItems(compras)
         setCompraTerminada(!compraTerminada)
         
     }
 
-        console.log("compras realizadas", compra)
+        console.log("compras realizadas", items)
 
        
 
@@ -48,6 +41,8 @@ const ItemDetail = ({ data }) => {
 
             
             </div>
+            <button onClick={()=> clearAll()}>limpiar</button>
+            <button onClick={() => isInCart()}>esta</button>
             
 
         </div>

@@ -3,7 +3,7 @@ import { CartContext } from '../components/Landing/CartContext'
 
 const Cart = () => {
 
-    const [estadoCompra, setEstadoCompra, onAdd, compra] = useContext(CartContext)
+    
     
 
     
