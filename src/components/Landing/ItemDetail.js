@@ -40,7 +40,7 @@ const ItemDetail = ({ data }) => {
             <h3>{data.detail}</h3>
             <div className="item-conterr">
             
-            {compraTerminada ? <button className="btn-final"><Link to='/cart'>Finalizar compra</Link></button> :<ItemCount initial = {parseInt(1)} stock={parseInt(20)} onClick={(cantidad) => onAdd(cantidad)} /> }
+            {compraTerminada ? <Link to='/cart'><button className="btn-final">Finalizar compra</button></Link> :<ItemCount initial = {parseInt(1)} stock={parseInt(20)} onClick={(cantidad) => onAdd(cantidad)} /> }
             
             </div>
             
@@ -48,7 +48,7 @@ const ItemDetail = ({ data }) => {
 
             
             </div>
-            <button onClick={()=> clearAll()}>limpiar</button>
+            
             
             
 
