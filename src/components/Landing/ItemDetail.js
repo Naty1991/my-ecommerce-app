@@ -8,6 +8,13 @@ import { CartContext } from './CartContext'
 const ItemDetail = ({ data }) => {
     const [items, setItems, addItem, clearAll, removeItem, isInCart] = useContext(CartContext)
 
+    
+  
+   const { title, price, detail, pictureUrl } = data;
+
+   console.log("esto es data", data)
+
+
 
     
 
@@ -42,7 +49,7 @@ const ItemDetail = ({ data }) => {
             
             </div>
             <button onClick={()=> clearAll()}>limpiar</button>
-            <button onClick={() => isInCart()}>esta</button>
+            
             
 
         </div>
@@ -50,6 +57,3 @@ const ItemDetail = ({ data }) => {
 }
 
 export default ItemDetail
-
-
-

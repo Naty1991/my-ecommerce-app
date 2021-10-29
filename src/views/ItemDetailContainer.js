@@ -10,7 +10,7 @@ const ItemDetailContainer = ({ match }) => {
     const[descrip, setDescrip] = useState({});
     
     let itemID = match.params.id;
-    console.log(itemID)
+  
     
     useEffect(()=>{
         axios(`https://my-json-server.typicode.com/Naty1991/FAKEDATA/products/${itemID}`).then((res) =>

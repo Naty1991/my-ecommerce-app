@@ -5,8 +5,8 @@ import React, {useState, useEffect} from 'react'
 const IndividualCategory = ({ match }) => {
 
     const[data, setData] = useState({})
-    console.log(data)
-
+   
+ 
     let categID = match.params.category
     useEffect(()=>{
         fetch('https://my-json-server.typicode.com/Naty1991/FAKEDATA/products')

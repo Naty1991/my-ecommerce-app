@@ -18,10 +18,10 @@ function App() {
             <Route path="/item/:id" component={ItemDetailContainer} />
             <Route path="/category/juguetes" component={Category} />
             <Route
-              patch="/category/juguetes/:category"
+              path="/category/juguetes/:category"
               component={IndividualCategory}
             />
-            <Route patch="/cart" component={Cart} />
+            <Route path="/cart" component={Cart} />
           </Switch>
         </div>
       </Router>
