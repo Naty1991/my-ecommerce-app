@@ -5,7 +5,9 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [items, setItems] = useState([]);
 
-  console.log(items);
+  
+
+  console.log("esto es items del context", items );
 
   const addItem = (item, cantidad) => {
     if (isInCart(item.id)) {
@@ -27,12 +29,25 @@ export const CartProvider = ({ children }) => {
 
   const isInCart = (itemId) => {
     items.find((item) => item.id === itemId);
-    alert("esta en el carro");
+   
   };
+
+
+  const alertSolo = () => {
+      alert("Acá está el context")
+  };
+
+  const [itemsTotales, setItemsTotales] = useState(0);
+ 
+  const totalPrice = () => {
+    let total = items.reduce((act, curr) => act + (curr.price * curr.length), 0);
+     setItemsTotales(total);
+  };
+
 
   return (
     <CartContext.Provider
-      value={ [items, setItems, addItem, clearAll, removeItem, isInCart]  }
+      value={ [items, setItems, addItem, clearAll, removeItem, isInCart, totalPrice, alertSolo]  }
     >
       {children}
     </CartContext.Provider>

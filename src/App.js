@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/Header/NavBar";
+import Footer from "./components/Landing/Footer"
 import Home from "./views/Home";
 import ItemDetailContainer from "./views/ItemDetailContainer";
 import Category from "./views/Category";
@@ -23,6 +24,7 @@ function App() {
             />
             <Route path="/cart" component={Cart} />
           </Switch>
+          <Footer/>
         </div>
       </Router>
     </CartProvider>

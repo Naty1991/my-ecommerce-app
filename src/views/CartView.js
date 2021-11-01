@@ -1,11 +1,9 @@
 import React from 'react'
 
-const CartView = () => {
+export const CartView = () => {
     return (
         <div>
             
         </div>
     )
 }
-
-export default CartView

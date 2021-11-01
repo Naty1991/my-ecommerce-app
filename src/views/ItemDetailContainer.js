@@ -5,6 +5,7 @@ import ItemDetail from '../components/Landing/ItemDetail'
 
 
 
+
 const ItemDetailContainer = ({ match }) => {
 
     const[descrip, setDescrip] = useState({});

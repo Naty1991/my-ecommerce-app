@@ -6,7 +6,7 @@ import { CartContext } from './CartContext'
 
 
 const ItemDetail = ({ data }) => {
-    const [items, setItems, addItem, clearAll, removeItem, isInCart] = useContext(CartContext)
+    const [items, setItems, addItem, isInCart] = useContext(CartContext)
 
     
   

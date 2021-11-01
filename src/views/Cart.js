@@ -1,20 +1,17 @@
 import React, { useContext, useState, useEffect } from "react";
-import { CartContext } from "../components/Landing/CartContext";
-import ItemCart from "../components/Landing/ItemCart";
+
+import { CartContext } from '../components/Landing/CartContext';
+import ItemCart from '../components/Landing/ItemCart';
+
 
 const Cart = () => {
-  const [ items, removeItem ] = useContext(CartContext);
+    const {items, removeItem, totalPrice, clearAll, setItems}    = useContext(CartContext);
   const [itemsTotales, setItemsTotales] = useState(0);
   
-//   useEffect(()=>{
-//     let total = items.reduce((act, curr) => act + (curr.price * curr.length), 0);
-//     setItemsTotales(total);
+  
 
   
-//   }, [items])
-  console.log(items)
-
-  return (
+    return (
     <div>
       {/* {!items.length ? (
         <div>
@@ -37,10 +34,10 @@ const Cart = () => {
       )} */}
        <div>
           <h2>"Tu carrito"</h2>
-          <div>
-            {items?.map(item => <ItemCart item={item} onRemove={removeItem}></ItemCart>)}
-          </div>
-          <div>{itemsTotales}</div>
+          
+          <ItemCart item={items}/>
+          
+          <button> borrar</button>
         </div>
     </div>
   );

@@ -16,7 +16,7 @@ const Item = ({ data }) => {
           <ItemCount initial = {parseInt(1)} stock={parseInt(20)} />
           <div className="t-p">
           
-          <button className="btn-item">Ver detalle del producto</button>
+          <button className="btn-item">Ver Más</button>
           <h4 className="price-item">${data.price}</h4>
          </div>
           
