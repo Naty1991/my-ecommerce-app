@@ -8,14 +8,14 @@ import ItemDetail from '../components/Landing/ItemDetail'
 
 const ItemDetailContainer = ({ match }) => {
 
-    const[descrip, setDescrip] = useState({});
+    const[item, setItem] = useState({});
     
     let itemID = match.params.id;
   
     
     useEffect(()=>{
         axios(`https://my-json-server.typicode.com/Naty1991/FAKEDATA/products/${itemID}`).then((res) =>
-			setDescrip(res.data)
+			setItem(res.data)
 		);
 		
           
@@ -26,7 +26,7 @@ const ItemDetailContainer = ({ match }) => {
         <div>
             <h1 style={{textAlign:"center", color:"#7C5520", textDecoration:"underline"}}>Detalles</h1>
             
-           <ItemDetail data={descrip}/>
+           <ItemDetail item={item}/>
                
             
         

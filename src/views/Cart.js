@@ -5,7 +5,7 @@ import ItemCart from '../components/Landing/ItemCart';
 
 
 const Cart = () => {
-    const {items, removeItem, totalPrice, clearAll, setItems}    = useContext(CartContext);
+    const { items, removeItem, totalPrice, clearAll, setItems }    = useContext(CartContext);
   const [itemsTotales, setItemsTotales] = useState(0);
   
   
@@ -34,8 +34,8 @@ const Cart = () => {
       )} */}
        <div>
           <h2>"Tu carrito"</h2>
+           <ItemCart item={items} />
           
-          <ItemCart item={items}/>
           
           <button> borrar</button>
         </div>

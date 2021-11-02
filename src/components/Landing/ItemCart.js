@@ -10,17 +10,18 @@ const ItemCart = ({ item }) => {
 
    const { title, price, detail, pictureUrl, id } = item;
 
-   console.log("esto es item data", item)
+   console.log("esto es item data")
     
 
   
     return (
         <div>
-            <h3>{item.title}</h3>
+            
             <h4>Holii</h4>
+            <h5>{item.title}</h5>
             {/* <button onClick={() => onRemove(item.id)}>Borrar producto</button> */}
             
-            <h4>{item.price}</h4>
+           
             
             
         </div>
