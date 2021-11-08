@@ -11,43 +11,46 @@ export const CartProvider = ({ children }) => {
 
   const addItem = (item, cantidad) => {
     if (isInCart(item.id)) {
-      alert("el prod. ya existe");
+      
+         return(
+             <div>
+                 <p>"Este producto ya existe!"</p>
+             </div>
+         )
+      
     }
 
-    alert(`se agrego $`);
-
+    
+     
+    
+    
     setItems([...items, { cantidad: cantidad, ...item }]);
   };
 
   const removeItem = (itemId) => {
     setItems(items.filter(item => item.id !== itemId));
+    return(
+        <h2>"Se eliminó el producto del carrito"</h2>
+    )
   };
 
   const clearAll = () => {
     setItems([]);
+    
   };
 
   const isInCart = (itemId) => {
-    items.find((item) => item.id === itemId);
-   
-  };
+    return !!items.find(item => item.id === itemId);
+}
 
 
-  const alertSolo = () => {
-      alert("Acá está el context")
-  };
-
-  const [itemsTotales, setItemsTotales] = useState(0);
  
-  const totalPrice = () => {
-    let total = items.reduce((act, curr) => act + (curr.price * curr.length), 0);
-     setItemsTotales(total);
-  };
 
+  
 
   return (
     <CartContext.Provider
-      value={ {items, setItems, addItem, clearAll, removeItem, isInCart, totalPrice, alertSolo}  }
+      value={ {items, setItems, addItem, clearAll, removeItem, isInCart}  }
     >
       {children}
     </CartContext.Provider>

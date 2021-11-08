@@ -2,22 +2,23 @@
 .container {
     border: 5px solid #DEA353;
     width: 200px;
-    height: 365px;
+    height: 320px;
     background-color: #BAB9B8;
     border-radius: 7px;
     box-shadow: 5px;
+    
 }
 
 .title-item{
     font-size: 13px;
-    position: relative;
-    top: 12px;
     text-align: center;
     background-color: #BAB9B8;
     
+}
 
-
-
+.img{
+    position: relative;
+    bottom: 10px;
 }
 
 .price-item{
@@ -29,8 +30,13 @@
 
 
 .btn-item{
-    position: relative;
-    bottom: 50px;
+    width: 70px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #A788CA;
+    border-radius: 4px;
+   
 }
 .t-p{
     display: flex;
@@ -38,10 +44,4 @@
     justify-content: space-between;
 }
 
-.item-item{
-    position: relative;
-    bottom: 70px;
-    
-    
-}
 

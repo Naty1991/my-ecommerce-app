@@ -1,29 +1,31 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import './ItemDetail.css'
 import ItemCount from './ItemCount'
-import {Link} from 'react-router-dom'
+
 import { CartContext } from './CartContext'
 
 
 const ItemDetail = ({ item }) => {
-    const {items, setItems, addItem, isInCart} = useContext(CartContext)
+    const {items, addItem} = useContext(CartContext)
 
     
   
    const { title, price, detail, pictureUrl } = item;
 
-   console.log("esto es data", item)
+  
+
+   const onAddToCart = (cantidad) => {
+
+    addItem(item, cantidad);
+   
+  }
+
+   
 
     
 
     
-    const[compraTerminada, setCompraTerminada] = useState(false)
-
-    const onAdd = (compras)=> {
-        setItems(compras)
-        setCompraTerminada(!compraTerminada)
-        
-    }
+    
 
         console.log("compras realizadas", items)
 
@@ -38,7 +40,7 @@ const ItemDetail = ({ item }) => {
             <h3>{item.detail}</h3>
             <div className="item-conterr">
             
-            {compraTerminada ? <Link to='/cart'><button className="btn-final">Finalizar compra</button></Link> :<ItemCount initial = {parseInt(1)} stock={parseInt(20)} onClick={(cantidad) => onAdd(cantidad)} /> }
+            <ItemCount initial = {parseInt(1)} stock={parseInt(20)} onClick={(cantidad) => onAddToCart(cantidad)} /> 
             
             </div>
             

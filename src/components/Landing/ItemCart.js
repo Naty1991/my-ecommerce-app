@@ -1,25 +1,28 @@
-import React, {useEffect, useState, useContext} from 'react';
-import { CartContext } from './CartContext'
+import React from 'react';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faTrashAlt} from '@fortawesome/free-solid-svg-icons'
+import './ItemCart.css'
 
 
-const ItemCart = ({ item }) => {
+const ItemCart = ({ item, onRemove }) => {
  
-    const {items, setItems, addItem, clearAll, removeItem, isInCart} = useContext(CartContext);
-    console.log("esto me trae item del itemCart", items)
-   
-
-   const { title, price, detail, pictureUrl, id } = item;
-
-   console.log("esto es item data")
     
-
-  
-    return (
-        <div>
+    
+   
+return (
+        <div className= "div-itemcart">
+           
             
-            <h4>Holii</h4>
-            <h5>{item.title}</h5>
-            {/* <button onClick={() => onRemove(item.id)}>Borrar producto</button> */}
+            
+            <h3 className="title-itemcart">{item.title}</h3>
+
+            <h3>{item.cantidad}</h3>
+            
+
+            <h3>${item.price}</h3>
+            <button className="btn-itemcart" onClick={() => onRemove(item.id)}><FontAwesomeIcon icon={faTrashAlt}/></button>
+            
             
            
             

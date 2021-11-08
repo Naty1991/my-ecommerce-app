@@ -5,40 +5,47 @@ import ItemCart from '../components/Landing/ItemCart';
 
 
 const Cart = () => {
-    const { items, removeItem, totalPrice, clearAll, setItems }    = useContext(CartContext);
+    const { items, removeItem, clearAll }    = useContext(CartContext);
   const [itemsTotales, setItemsTotales] = useState(0);
-  
+
+  useEffect(() => {
+    let total = items.reduce((acc, item) => acc + (item.price * item.cantidad), 0);
+    setItemsTotales(total);
+}, [items])
+
+
+
   
 
   
     return (
     <div>
-      {/* {!items.length ? (
-        <div>
-          <h2>"No tenes productos en el carrito"</h2>
-        </div>
-      ) : (
-        <div>
-          <h2>"Tu carrito"</h2>
-          <div>
-            {items.map((item) => {
-              return (
-                <div>
-                  <ItemCart items={items} onRemove={removeItem} />
-                </div>
-              );
-            })}
-          </div>
-          <div>{itemsTotales}</div>
-        </div>
-      )} */}
-       <div>
-          <h2>"Tu carrito"</h2>
-           <ItemCart item={items} />
-          
-          
-          <button> borrar</button>
-        </div>
+        <button onClick={() => clearAll()}>Limpiar carrito</button>
+      {     !items.length ?
+                    <>
+                        <h4>No hay items en el carrito</h4>
+                        
+                    </>
+                    :
+                    <>
+
+                    
+
+                        <h3>Carrito</h3>
+                      
+                            {items?.map(item => <ItemCart item={item} onRemove={removeItem}></ItemCart>)}
+                       
+                     
+                                    <h2>Total</h2>
+                                 
+                      
+                                   <h3>${itemsTotales}</h3> 
+                    <form>
+                      <input/>
+                    </form>
+                    </>          
+            }
+     
     </div>
   );
 };

@@ -1,11 +1,24 @@
 .trolley-icon{
     position:relative;
     bottom: 2px;
+    top: 25px;
     font-size: 25px;
     color: #84E7AF;
+
     
 }
 
 .trolley-icon:hover{
     color: #fafafa;
+}
+
+.cart-itemcount{
+    position: relative;
+    bottom: 75px;
+   margin-left: 25px;
+   margin-top: 25px;
+   font-size: 17px;
+   color: #000;
+
+
 }
