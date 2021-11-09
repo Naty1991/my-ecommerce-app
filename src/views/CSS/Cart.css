@@ -1,0 +1,27 @@
+.cart-totalitems{
+   
+    align-items: flex-end;
+
+    
+}
+
+.cart-totalprice{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+   
+    height: 65px;
+    background-color: #BBB9D2;
+}
+
+.itemcart-totalprice{
+    margin-right: 10px;
+    color: #5E55CD;
+}
+
+.itemcart-total{
+    margin-left: 10px;
+    color: #5E55CD;
+}

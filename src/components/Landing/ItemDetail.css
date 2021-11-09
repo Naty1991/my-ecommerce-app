@@ -37,7 +37,7 @@
 
 .item-conterr{
     position: relative;
-    bottom: 50px;
+    bottom: 110px;
     display: flex;
     justify-content: center;
 }
@@ -46,8 +46,8 @@
 
 .btn-final{
     position: relative;
-    top: 60px;
-    right: 45px;
+    top: 90px;
+    right: 47px;
     width: 200px;
     background-color: #09B0B3;
     padding: 7px;

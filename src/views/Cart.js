@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-
+import '../views/CSS/Cart.css'
 import { CartContext } from '../components/Landing/CartContext';
 import ItemCart from '../components/Landing/ItemCart';
 
@@ -29,20 +29,22 @@ const Cart = () => {
                     :
                     <>
 
-                    
+                    <div className="cart-totalitems">
+                    <h3>Carrito</h3>
+                      
+                      {items?.map(item => <ItemCart item={item} onRemove={removeItem}></ItemCart>)}
+                 
+                    <div className="cart-totalprice">
+                    <h3 className="itemcart-total">Total :</h3>
+                           
+                
+                    <h3 className="itemcart-totalprice">${itemsTotales}</h3> 
+                    </div>
+                              
+                    </div>
 
-                        <h3>Carrito</h3>
-                      
-                            {items?.map(item => <ItemCart item={item} onRemove={removeItem}></ItemCart>)}
-                       
-                     
-                                    <h2>Total</h2>
-                                 
-                      
-                                   <h3>${itemsTotales}</h3> 
-                    <form>
-                      <input/>
-                    </form>
+                        
+                   
                     </>          
             }
      

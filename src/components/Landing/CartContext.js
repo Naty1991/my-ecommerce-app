@@ -12,12 +12,11 @@ export const CartProvider = ({ children }) => {
   const addItem = (item, cantidad) => {
     if (isInCart(item.id)) {
       
-         return(
-             <div>
-                 <p>"Este producto ya existe!"</p>
-             </div>
-         )
-      
+         
+        <div>
+        <p>"Este producto ya existe!"</p>
+      </div>;
+      return;
     }
 
     
